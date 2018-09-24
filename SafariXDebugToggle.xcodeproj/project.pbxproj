@@ -11,7 +11,38 @@
 		CDF1FFD22158E12B004ED27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1FFD12158E12B004ED27A /* ViewController.swift */; };
 		CDF1FFD42158E12E004ED27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFD32158E12E004ED27A /* Assets.xcassets */; };
 		CDF1FFD72158E12E004ED27A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFD52158E12E004ED27A /* Main.storyboard */; };
+		CDF1FFE62158E151004ED27A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1FFE52158E151004ED27A /* Cocoa.framework */; };
+		CDF1FFE92158E151004ED27A /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1FFE82158E151004ED27A /* SafariExtensionHandler.swift */; };
+		CDF1FFEB2158E151004ED27A /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1FFEA2158E151004ED27A /* SafariExtensionViewController.swift */; };
+		CDF1FFEE2158E151004ED27A /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFEC2158E151004ED27A /* SafariExtensionViewController.xib */; };
+		CDF1FFF12158E151004ED27A /* xdebugtoggle.js in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFF02158E151004ED27A /* xdebugtoggle.js */; };
+		CDF1FFF32158E151004ED27A /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFF22158E151004ED27A /* ToolbarItemIcon.pdf */; };
+		CDF1FFF72158E151004ED27A /* SafariXDebugToggleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CDF1FFE32158E151004ED27A /* SafariXDebugToggleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDF1FFF52158E151004ED27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDF1FFC42158E12B004ED27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDF1FFE22158E151004ED27A;
+			remoteInfo = SafariXDebugToggleExtemsion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDF1FFFB2158E151004ED27A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CDF1FFF72158E151004ED27A /* SafariXDebugToggleExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CDF1FFCC2158E12B004ED27A /* SafariXDebugToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariXDebugToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +52,15 @@
 		CDF1FFD62158E12E004ED27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDF1FFD82158E12E004ED27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF1FFD92158E12E004ED27A /* SafariXDebugToggle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariXDebugToggle.entitlements; sourceTree = "<group>"; };
+		CDF1FFE32158E151004ED27A /* SafariXDebugToggleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariXDebugToggleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF1FFE52158E151004ED27A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CDF1FFE82158E151004ED27A /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		CDF1FFEA2158E151004ED27A /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		CDF1FFED2158E151004ED27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		CDF1FFEF2158E151004ED27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF1FFF02158E151004ED27A /* xdebugtoggle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = xdebugtoggle.js; sourceTree = "<group>"; };
+		CDF1FFF22158E151004ED27A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		CDF1FFF42158E151004ED27A /* SafariXDebugToggleExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariXDebugToggleExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDF1FFE02158E151004ED27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF1FFE62158E151004ED27A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				CDF1FFCE2158E12B004ED27A /* SafariXDebugToggle */,
+				CDF1FFE72158E151004ED27A /* SafariXDebugToggleExtension */,
+				CDF1FFE42158E151004ED27A /* Frameworks */,
 				CDF1FFCD2158E12B004ED27A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CDF1FFCC2158E12B004ED27A /* SafariXDebugToggle.app */,
+				CDF1FFE32158E151004ED27A /* SafariXDebugToggleExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +114,28 @@
 			path = SafariXDebugToggle;
 			sourceTree = "<group>";
 		};
+		CDF1FFE42158E151004ED27A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1FFE52158E151004ED27A /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDF1FFE72158E151004ED27A /* SafariXDebugToggleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1FFE82158E151004ED27A /* SafariExtensionHandler.swift */,
+				CDF1FFEA2158E151004ED27A /* SafariExtensionViewController.swift */,
+				CDF1FFEC2158E151004ED27A /* SafariExtensionViewController.xib */,
+				CDF1FFEF2158E151004ED27A /* Info.plist */,
+				CDF1FFF02158E151004ED27A /* xdebugtoggle.js */,
+				CDF1FFF22158E151004ED27A /* ToolbarItemIcon.pdf */,
+				CDF1FFF42158E151004ED27A /* SafariXDebugToggleExtension.entitlements */,
+			);
+			path = SafariXDebugToggleExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +146,34 @@
 				CDF1FFC82158E12B004ED27A /* Sources */,
 				CDF1FFC92158E12B004ED27A /* Frameworks */,
 				CDF1FFCA2158E12B004ED27A /* Resources */,
+				CDF1FFFB2158E151004ED27A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDF1FFF62158E151004ED27A /* PBXTargetDependency */,
 			);
 			name = SafariXDebugToggle;
 			productName = SafariXDebugToggle;
 			productReference = CDF1FFCC2158E12B004ED27A /* SafariXDebugToggle.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CDF1FFE22158E151004ED27A /* SafariXDebugToggleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDF1FFF82158E151004ED27A /* Build configuration list for PBXNativeTarget "SafariXDebugToggleExtension" */;
+			buildPhases = (
+				CDF1FFDF2158E151004ED27A /* Sources */,
+				CDF1FFE02158E151004ED27A /* Frameworks */,
+				CDF1FFE12158E151004ED27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariXDebugToggleExtension;
+			productName = SafariXDebugToggleExtemsion;
+			productReference = CDF1FFE32158E151004ED27A /* SafariXDebugToggleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +186,9 @@
 				ORGANIZATIONNAME = "Benjamin Issleib";
 				TargetAttributes = {
 					CDF1FFCB2158E12B004ED27A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CDF1FFE22158E151004ED27A = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -112,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				CDF1FFCB2158E12B004ED27A /* SafariXDebugToggle */,
+				CDF1FFE22158E151004ED27A /* SafariXDebugToggleExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +219,16 @@
 			files = (
 				CDF1FFD42158E12E004ED27A /* Assets.xcassets in Resources */,
 				CDF1FFD72158E12E004ED27A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF1FFE12158E151004ED27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF1FFF32158E151004ED27A /* ToolbarItemIcon.pdf in Resources */,
+				CDF1FFEE2158E151004ED27A /* SafariExtensionViewController.xib in Resources */,
+				CDF1FFF12158E151004ED27A /* xdebugtoggle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +244,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDF1FFDF2158E151004ED27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF1FFEB2158E151004ED27A /* SafariExtensionViewController.swift in Sources */,
+				CDF1FFE92158E151004ED27A /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDF1FFF62158E151004ED27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDF1FFE22158E151004ED27A /* SafariXDebugToggleExtension */;
+			targetProxy = CDF1FFF52158E151004ED27A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CDF1FFD52158E12E004ED27A /* Main.storyboard */ = {
@@ -147,6 +270,14 @@
 				CDF1FFD62158E12E004ED27A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDF1FFEC2158E151004ED27A /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDF1FFED2158E151004ED27A /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -270,10 +401,13 @@
 		CDF1FFDD2158E12E004ED27A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggle/SafariXDebugToggle.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6344P6R62N;
 				INFOPLIST_FILE = SafariXDebugToggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,6 +415,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -288,10 +423,13 @@
 		CDF1FFDE2158E12E004ED27A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggle/SafariXDebugToggle.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6344P6R62N;
 				INFOPLIST_FILE = SafariXDebugToggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +437,49 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		CDF1FFF92158E151004ED27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggleExtension/SafariXDebugToggleExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6344P6R62N;
+				INFOPLIST_FILE = SafariXDebugToggleExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle.SafariXDebugToggleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CDF1FFFA2158E151004ED27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggleExtension/SafariXDebugToggleExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6344P6R62N;
+				INFOPLIST_FILE = SafariXDebugToggleExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle.SafariXDebugToggleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -320,6 +501,15 @@
 			buildConfigurations = (
 				CDF1FFDD2158E12E004ED27A /* Debug */,
 				CDF1FFDE2158E12E004ED27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDF1FFF82158E151004ED27A /* Build configuration list for PBXNativeTarget "SafariXDebugToggleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF1FFF92158E151004ED27A /* Debug */,
+				CDF1FFFA2158E151004ED27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
