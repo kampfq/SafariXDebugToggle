@@ -1,5 +1,6 @@
 # SafariXDebugToggle
 Toggle XDebug in Safari 12 and beyond
+
 [website](https://www.kampfq.eu/de/safarixdebugtoggle.html)
 
 # Motivation
