@@ -407,7 +407,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6344P6R62N;
+				DEVELOPMENT_TEAM = 7929389C43;
 				INFOPLIST_FILE = SafariXDebugToggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,7 +429,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6344P6R62N;
+				DEVELOPMENT_TEAM = 7929389C43;
 				INFOPLIST_FILE = SafariXDebugToggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,14 +448,14 @@
 				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggleExtension/SafariXDebugToggleExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6344P6R62N;
+				DEVELOPMENT_TEAM = 7929389C43;
 				INFOPLIST_FILE = SafariXDebugToggleExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle.SafariXDebugToggleExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.converia.SafariXDebugToggle.SafariXDebugToggleExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -469,14 +469,14 @@
 				CODE_SIGN_ENTITLEMENTS = SafariXDebugToggleExtension/SafariXDebugToggleExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6344P6R62N;
+				DEVELOPMENT_TEAM = 7929389C43;
 				INFOPLIST_FILE = SafariXDebugToggleExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.issleib.SafariXDebugToggle.SafariXDebugToggleExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.converia.SafariXDebugToggle.SafariXDebugToggleExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
