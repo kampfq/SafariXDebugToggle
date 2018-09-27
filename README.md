@@ -13,3 +13,7 @@ Before macOS Mojave i used [XDebug Helper](https://github.com/mac-cain13/xdebug-
 2. Go to Extensions
 3. Enable SafariXDebug 4. Click the Icon in the Toolbar
 
+Third Party Content:
+
+Icon: https://svgsilh.com/image/47381.html (CC0)
+
