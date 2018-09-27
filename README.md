@@ -1,10 +1,8 @@
 # SafariXDebugToggle
 Toggle XDebug in Safari 12 and beyond
+[Get it on the Mac AppStore](https://itunes.apple.com/app/safari-xdebug-toggle/id1437227804?mt=12)
 
 [website](https://www.kampfq.eu/de/safarixdebugtoggle.html)
-
-
-<a href="https://geo.itunes.apple.com/us/app/safari-xdebug-toggle/id1437227804?mt=12&app=apps" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/macappstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
 
 # Motivation
 
