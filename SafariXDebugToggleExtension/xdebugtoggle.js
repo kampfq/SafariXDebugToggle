@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     safari.extension.dispatchMessage("Hello World!");
+    var xdebugSession = getCookie("XDEBUG_SESSION");
+    if (xdebugSession != "") {
+        sendCurrentStateToApp(true);
+    } else {
+        sendCurrentStateToApp(false);
+    }
 });
 
 safari.self.addEventListener("message", messageHandler); // Message recieved from Swift code
@@ -17,10 +23,8 @@ function toggleXDebugButton(event) {
     var xdebugSession = getCookie("XDEBUG_SESSION");
     if (xdebugSession != "") {
         setCookie("XDEBUG_SESSION","",0);
-        sendCurrentStateToApp(true);
     } else {
         setCookie("XDEBUG_SESSION","XDEBUG_ECLIPSE",365);
-        sendCurrentStateToApp(false);
     }
     
 }
@@ -49,5 +53,5 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 function sendCurrentStateToApp(isActive){
-    safari.extension.dispatchMessage("updateToolbarIcon",  { "debugOn": isActive });
+    safari.extension.dispatchMessage("updateToolbarIcon",  { debugOn: isActive });
 }

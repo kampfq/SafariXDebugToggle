@@ -10,7 +10,7 @@ import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
-    var xDebugIsActive = false;
+    let xDebugState = XDebugState.instance
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
@@ -18,9 +18,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             NSLog("The extension received a message (\(messageName)) from a script injected into (\(String(describing: properties?.url))) with userInfo (\(userInfo ?? [:]))")
             
             if(messageName == "updateToolbarIcon"){
-                self.xDebugIsActive = userInfo?["debugOn"] as? Bool ?? false
+                XDebugState.instance.xDebugIsActive[page] = userInfo?["debugOn"] as? Bool ?? false
                 SFSafariApplication.setToolbarItemsNeedUpdate()
-                
             }
         }
 
@@ -31,17 +30,33 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
         getActivePage {
-            $0?.dispatchMessageToScript(withName: "toggleXdebug", userInfo: nil)
+            guard let page = $0 else {return}
+            page.dispatchMessageToScript(withName: "toggleXdebug", userInfo: nil)
+            let xdebugIsActiveOncurrentPage =  XDebugState.instance.xDebugIsActive[page] ?? false
+            if(xdebugIsActiveOncurrentPage == true){
+                XDebugState.instance.xDebugIsActive[page] = nil
+            } else {
+                XDebugState.instance.xDebugIsActive[page] = true
+            }
+            SFSafariApplication.setToolbarItemsNeedUpdate()
+
+        
         }
         
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
         // This is called when Safari's state changed in some way that would require the extension's toolbar item to be validated again.
-        if(self.xDebugIsActive){
-            window.getToolbarItem { $0?.setBadgeText("1") }
-        } else {
-            window.getToolbarItem { $0?.setBadgeText(nil) }
+       
+        
+        getActivePage {
+            guard let page = $0 else {return}
+            let xdebugIsActiveOncurrentPage =  XDebugState.instance.xDebugIsActive[page] ?? false
+            if(xdebugIsActiveOncurrentPage == true){
+                window.getToolbarItem { $0?.setBadgeText("1") }
+            } else {
+                window.getToolbarItem { $0?.setBadgeText(nil) }
+            }
         }
 
         validationHandler(true, "")

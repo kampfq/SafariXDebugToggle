@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3F1637215CBD07006658C1 /* XDebugState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3F1636215CBD07006658C1 /* XDebugState.swift */; };
 		CDF1FFD02158E12B004ED27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1FFCF2158E12B004ED27A /* AppDelegate.swift */; };
 		CDF1FFD22158E12B004ED27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1FFD12158E12B004ED27A /* ViewController.swift */; };
 		CDF1FFD42158E12E004ED27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF1FFD32158E12E004ED27A /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD3F1636215CBD07006658C1 /* XDebugState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDebugState.swift; sourceTree = "<group>"; };
 		CDF1FFCC2158E12B004ED27A /* SafariXDebugToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariXDebugToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF1FFCF2158E12B004ED27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF1FFD12158E12B004ED27A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CDF1FFF02158E151004ED27A /* xdebugtoggle.js */,
 				CDF1FFF22158E151004ED27A /* ToolbarItemIcon.pdf */,
 				CDF1FFF42158E151004ED27A /* SafariXDebugToggleExtension.entitlements */,
+				CD3F1636215CBD07006658C1 /* XDebugState.swift */,
 			);
 			path = SafariXDebugToggleExtension;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3F1637215CBD07006658C1 /* XDebugState.swift in Sources */,
 				CDF1FFEB2158E151004ED27A /* SafariExtensionViewController.swift in Sources */,
 				CDF1FFE92158E151004ED27A /* SafariExtensionHandler.swift in Sources */,
 			);
