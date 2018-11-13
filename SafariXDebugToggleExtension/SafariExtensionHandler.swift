@@ -11,7 +11,8 @@ import SafariServices
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
     let xDebugState = XDebugState.instance
-    
+    let defaults = UserDefaults.init(suiteName: "group.com.converia.SafariXDebugToggle")
+
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
         page.getPropertiesWithCompletionHandler { properties in
@@ -30,8 +31,9 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
         getActivePage {
+            let ideKey = self.defaults?.object(forKey:"IdeKey") as? String ?? "XDEBUG_ECLIPSE"
             guard let page = $0 else {return}
-            page.dispatchMessageToScript(withName: "toggleXdebug", userInfo: nil)
+            page.dispatchMessageToScript(withName: "toggleXdebug", userInfo: [ "ideKey": ideKey ])
             let xdebugIsActiveOncurrentPage =  XDebugState.instance.xDebugIsActive[page] ?? false
             if(xdebugIsActiveOncurrentPage == true){
                 XDebugState.instance.xDebugIsActive[page] = nil

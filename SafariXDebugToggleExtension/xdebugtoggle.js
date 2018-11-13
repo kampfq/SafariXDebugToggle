@@ -13,18 +13,18 @@ safari.self.addEventListener("message", messageHandler); // Message recieved fro
 
 function messageHandler(event) {
     if (event.name === "toggleXdebug") {
-        toggleXDebugButton();
+        toggleXDebugButton(event.message.ideKey);
     }
 }
 
 
-function toggleXDebugButton(event) {
+function toggleXDebugButton(ideKey) {
     
     var xdebugSession = getCookie("XDEBUG_SESSION");
     if (xdebugSession != "") {
-        setCookie("XDEBUG_SESSION","",0);
+        setCookie("XDEBUG_SESSION","",-1);
     } else {
-        setCookie("XDEBUG_SESSION","XDEBUG_ECLIPSE",365);
+        setCookie("XDEBUG_SESSION",ideKey,365);
     }
     
 }
